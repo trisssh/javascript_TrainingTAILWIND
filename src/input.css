@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-[120rem] mx-auto p-[1.5rem] w-full;
+}
+
+@layer components {
+  .header {
+    @apply bg-blue-500 fixed w-full;
+  }
+  .header.active {
+    @apply bg-purple-900;
+  }
+  .header .header__wrapper {
+    @apply flex items-center justify-between;
+  }
+  .header .header__nav {
+    @apply hidden;
+  }
+  .header .toggle__menu {
+    @apply flex flex-col gap-[.3rem];
+  }
+
+  .header .toggle__menu span {
+    @apply w-[2rem] h-[.2rem] bg-white block rounded-full;
+  }
+  .batches .batches__tab ul {
+    @apply bg-purple-500 flex justify-between py-[3rem];
+  }
+  .batches .batches__tab ul li a {
+    @apply text-white p-[1rem];
+  }
+  .batches .batches__content {
+    @apply relative;
+  }
+  .batches .batches__tab__content {
+    @apply flex gap-[2rem] items-center right-[0rem] absolute opacity-0 ease-in-out duration-[.5s];
+  }
+  .batches .batches__tab__content.active {
+    @apply opacity-[1] right-[5rem] ease-in-out duration-[.5s];
+  }
+
+
+  .batches .batches__tab ul li.active {
+    @apply bg-black;
+  }
+  .batches .batches__tab__content img {
+    @apply max-w-[10rem] max-h-[10rem];
+  }
+  .batches .batches__trainee__desc h1 {
+    @apply text-[1.5rem] font-bold text-black;
+  }
+  .batches .batches__trainee__desc h2 {
+    @apply text-[1.2rem];
+  }
+  .batches .batches__trainee__desc h3 {
+    @apply text-[1.1rem];
+  }
+
+  .banner {
+    @apply bg-unsplash h-[100vh] w-[100vw] bg-cover flex items-center text-center;
+  }
+}

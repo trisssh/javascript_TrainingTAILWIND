@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAILWIND-javascriptTraining</title>
+
+    <link rel="stylesheet" href="./output.css">
+    <!-- JAVASCRIPT TABS -->
+</head>
+
+<body class="h-[5000px]">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
+                <div class="header__nav">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="">OJT Batches</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="toggle__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+      <section class="banner">
+        <div class="container">
+            <div class="banner__wrapper">
+                <h1 class="font-bold text-2xl text-white bg-purple-500">San Pablo City</h1>
+            </div>
+        </div>
+      </section>
+
+    <section class="batches">
+        <div class="batches__wrapper">
+            <div class="batches__tab bg-slate-200">
+                <ul>
+                    <li id="trainee-1" class="trainee__nav__link active"><a href="javascript:void(0)">Allen</a></li>
+                    <li id="trainee-2" class="trainee__nav__link"><a href="javascript:void(0)">George</a></li>
+                    <li id="trainee-3" class="trainee__nav__link"><a href="javascript:void(0)">sirABET</a></li>
+                </ul>
+
+                <div class="batches__content">
+                    <div id="trainee-1-content" class="batches__tab__content active">
+                        <img src="./images/balloonflower.jpg" alt="">
+                        <div class="batches__trainee__desc">
+                            <h1 class="font-extrabold">Balloon Flower</h1>
+                           <h5><h4 class="font-semibold">When it blooms:</h4>Midsummer</h5> 
+                            <h3>This perennial has brilliant blue, purple or pink blooms last for weeks. Plus, the tiny balloon-shaped buds make it even more fun to admire in your garden!</h3>
+                        </div>
+                    </div>
+
+                    <div id="trainee-2-content" class="batches__tab__content">
+                        <img src="./images/gab 1.png" alt="">
+                        <div class="batches__trainee__desc">
+                            <h1>George</h1>
+                            <h2>BSCS-3</h2>
+                            <h3>school</h3>
+                        </div>
+                    </div>
+                    
+
+                    <div id="trainee-3-content" class="batches__tab__content">
+                        <img src="./images/Abet.png" alt="">
+                        <div class="batches__trainee__desc">
+                            <h1>sirABET</h1>
+                            <h2>Prof</h2>
+                            <h3>FBS</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
